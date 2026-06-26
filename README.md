@@ -92,6 +92,33 @@ npm test
    https://app.uniswap.org/#/add/v2/ETH/<your-contract-address>
    ```
 
+## Launch day
+
+There's a full step-by-step **[DEPLOY_CHECKLIST.md](./DEPLOY_CHECKLIST.md)** —
+follow it top to bottom (it has you do a free testnet dry run first).
+
+### Give FERN to friends (airdrop)
+
+```bash
+cp airdrop.example.json airdrop.json   # then edit with friends' addresses + amounts
+# set FERN_ADDRESS in .env to your deployed contract, then:
+npm run airdrop:sepolia                # test first
+npm run airdrop:mainnet                # for real
+```
+
+### Lock trust by burning your liquidity
+
+After adding liquidity, burning your Uniswap LP tokens proves you can't pull the
+pool ("rug"). Set `LP_TOKEN_ADDRESS` in `.env`, then:
+
+```bash
+npx hardhat run scripts/burn-liquidity.js --network mainnet            # dry run
+npx hardhat run scripts/burn-liquidity.js --network mainnet -- --confirm  # for real
+```
+
+> This is irreversible. Prefer to keep the option to reclaim liquidity later?
+> Use a time-lock service (UNCX, Team Finance) instead.
+
 ## A note on safety & expectations
 
 - Meme coins are highly speculative and most go to zero. Only put in what you're
