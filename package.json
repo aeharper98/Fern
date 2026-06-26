@@ -1,0 +1,29 @@
+{
+  "name": "fern-coin",
+  "version": "1.0.0",
+  "description": "$FERN — a meme coin for Fern, a one-year-old field golden retriever.",
+  "license": "MIT",
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
+    "node": "hardhat node"
+  },
+  "keywords": [
+    "ethereum",
+    "erc20",
+    "meme",
+    "fern",
+    "crypto",
+    "solidity"
+  ],
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.10"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0",
+    "dotenv": "^16.4.5"
+  }
+}
