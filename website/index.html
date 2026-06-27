@@ -8,6 +8,11 @@
       name="description"
       content="$FERN is a meme coin for Fern, a one-year-old field golden retriever. The goodest coin on the chain."
     />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta property="og:title" content="$FERN — The Field Golden Retriever Meme Coin" />
+    <meta property="og:image" content="logo-512.png" />
     <style>
       :root {
         --gold: #d9a441;
@@ -29,15 +34,15 @@
       }
       .wrap { max-width: 880px; margin: 0 auto; padding: 24px; }
       header { text-align: center; padding: 64px 0 32px; }
-      .pup {
-        font-size: 92px;
-        line-height: 1;
-        filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.15));
-        animation: bounce 2.2s ease-in-out infinite;
+      .logo {
+        width: clamp(160px, 40vw, 220px);
+        height: auto;
+        filter: drop-shadow(0 8px 14px rgba(110, 90, 40, 0.3));
+        animation: bounce 2.6s ease-in-out infinite;
       }
       @keyframes bounce {
         0%, 100% { transform: translateY(0) rotate(-2deg); }
-        50% { transform: translateY(-14px) rotate(2deg); }
+        50% { transform: translateY(-12px) rotate(2deg); }
       }
       h1 {
         font-size: clamp(40px, 9vw, 76px);
@@ -117,7 +122,7 @@
   <body>
     <div class="wrap">
       <header>
-        <div class="pup">🐕🌾</div>
+        <img class="logo" src="logo.svg" alt="$FERN coin — Fern the field golden retriever" width="220" height="220" />
         <h1>$FERN</h1>
         <p class="tagline">The Field Golden Retriever Meme Coin</p>
         <span class="badge">🌾 PROOF OF GOOD GIRL 🌾</span>

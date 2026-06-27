@@ -1,6 +1,22 @@
 # 🌾🐕 Fern Coin ($FERN)
 
+<p align="center">
+  <img src="website/logo.svg" alt="$FERN coin — Fern the field golden retriever" width="220" />
+</p>
+
 > A meme coin for **Fern** — a one-year-old field golden retriever and certified good girl.
+
+## Brand assets
+
+The logo lives in `website/`, hand-drawn as a scalable vector and rasterized to PNG:
+
+| File                            | Use                                          |
+| ------------------------------- | -------------------------------------------- |
+| `website/logo.svg`              | Master logo (scales to any size)             |
+| `website/logo-512.png`          | Social / Open Graph image                    |
+| `website/logo-256.png`          | Token-list icon (the standard size DEXs use) |
+| `website/favicon.svg` / `-32.png` | Browser tab icon                           |
+| `website/apple-touch-icon.png`  | iOS home-screen icon (180×180)               |
 
 $FERN is a plain, honest, **standard ERC-20 token**. No transfer taxes, no
 hidden mint, no owner backdoors, no blacklist. The entire supply is created once
