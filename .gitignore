@@ -1,0 +1,13 @@
+node_modules/
+.env
+
+# Your real airdrop recipient list (keep the example, ignore the real one)
+airdrop.json
+coverage/
+coverage.json
+typechain/
+typechain-types/
+
+# Hardhat
+cache/
+artifacts/

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$FERN — The Field Golden Retriever Meme Coin 🌾🐕</title>
+    <meta
+      name="description"
+      content="$FERN is a meme coin for Fern, a one-year-old field golden retriever. The goodest coin on the chain."
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta property="og:title" content="$FERN — The Field Golden Retriever Meme Coin" />
+    <meta property="og:image" content="logo-512.png" />
+    <style>
+      :root {
+        --gold: #d9a441;
+        --gold-light: #f3d488;
+        --field: #6b8e23;
+        --field-dark: #3f5c12;
+        --cream: #fdf6e9;
+        --ink: #2b2118;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 20% -10%, var(--gold-light), transparent 45%),
+          linear-gradient(160deg, var(--cream), #eef3df 60%, #dce8c0);
+        min-height: 100vh;
+        line-height: 1.6;
+      }
+      .wrap { max-width: 880px; margin: 0 auto; padding: 24px; }
+      header { text-align: center; padding: 64px 0 32px; }
+      .logo {
+        width: clamp(160px, 40vw, 220px);
+        height: auto;
+        filter: drop-shadow(0 8px 14px rgba(110, 90, 40, 0.3));
+        animation: bounce 2.6s ease-in-out infinite;
+      }
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0) rotate(-2deg); }
+        50% { transform: translateY(-12px) rotate(2deg); }
+      }
+      h1 {
+        font-size: clamp(40px, 9vw, 76px);
+        color: var(--gold);
+        letter-spacing: -1px;
+        margin: 8px 0 4px;
+        text-shadow: 2px 2px 0 var(--field-dark);
+      }
+      .tagline { font-size: clamp(16px, 3.5vw, 22px); color: var(--field-dark); font-weight: bold; }
+      .badge {
+        display: inline-block;
+        background: var(--field);
+        color: #fff;
+        padding: 4px 14px;
+        border-radius: 999px;
+        font-size: 14px;
+        margin-top: 14px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+      }
+      .card {
+        background: #fff;
+        border: 3px solid var(--gold);
+        border-radius: 22px;
+        padding: 28px;
+        margin: 22px 0;
+        box-shadow: 0 10px 30px rgba(110, 90, 40, 0.12);
+      }
+      .card h2 { color: var(--field-dark); margin-bottom: 14px; font-size: 26px; }
+      .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .stat {
+        background: var(--cream);
+        border-radius: 14px;
+        padding: 16px;
+        text-align: center;
+        border: 2px dashed var(--gold-light);
+      }
+      .stat .num { font-size: 26px; font-weight: bold; color: var(--gold); }
+      .stat .label { font-size: 13px; text-transform: uppercase; letter-spacing: 0.6px; opacity: 0.8; }
+      ul.traits { list-style: none; display: grid; gap: 10px; }
+      ul.traits li {
+        background: var(--cream);
+        padding: 12px 16px;
+        border-radius: 12px;
+        border-left: 5px solid var(--field);
+      }
+      .how { counter-reset: step; list-style: none; display: grid; gap: 12px; }
+      .how li { position: relative; padding-left: 48px; }
+      .how li::before {
+        counter-increment: step;
+        content: counter(step);
+        position: absolute; left: 0; top: 0;
+        width: 32px; height: 32px;
+        background: var(--gold);
+        color: #fff; font-weight: bold;
+        border-radius: 50%;
+        display: grid; place-items: center;
+      }
+      code {
+        background: var(--ink);
+        color: var(--gold-light);
+        padding: 2px 8px;
+        border-radius: 6px;
+        font-size: 14px;
+        word-break: break-all;
+      }
+      .disclaimer {
+        font-size: 13px;
+        opacity: 0.75;
+        text-align: center;
+        margin: 28px 0 12px;
+        padding: 0 12px;
+      }
+      footer { text-align: center; padding: 24px 0 48px; color: var(--field-dark); }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <img class="logo" src="logo.svg" alt="$FERN coin — Fern the field golden retriever" width="220" height="220" />
+        <h1>$FERN</h1>
+        <p class="tagline">The Field Golden Retriever Meme Coin</p>
+        <span class="badge">🌾 PROOF OF GOOD GIRL 🌾</span>
+      </header>
+
+      <section class="card">
+        <h2>Who's a good coin? 🐾</h2>
+        <p>
+          $FERN is the official meme coin of <strong>Fern</strong>, a
+          one-year-old <strong>field</strong> golden retriever — the lean,
+          fast, born-to-run working line, not the fluffy show type. She likes
+          long sprints through tall grass, retrieving things you didn't throw,
+          and being a very good girl. Now she's on-chain.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Tokenomics</h2>
+        <div class="stats">
+          <div class="stat"><div class="num">1,000,000,000</div><div class="label">Total Supply</div></div>
+          <div class="stat"><div class="num">FERN</div><div class="label">Ticker</div></div>
+          <div class="stat"><div class="num">0%</div><div class="label">Tax</div></div>
+          <div class="stat"><div class="num">∞</div><div class="label">Good Girl Energy</div></div>
+        </div>
+        <ul class="traits" style="margin-top: 18px;">
+          <li>🔒 <strong>Fixed supply</strong> — no mint function, supply can never inflate.</li>
+          <li>🛡️ <strong>No owner backdoors</strong> — no pause, no tax, no blacklist.</li>
+          <li>🔥 <strong>Burnable</strong> — holders can torch their own bag.</li>
+          <li>✅ <strong>Standard ERC-20</strong> — tradeable on Uniswap & friends.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>How to get some 🦴</h2>
+        <ol class="how">
+          <li>Deploy the contract from this repo (see the README).</li>
+          <li>Add an ETH/FERN liquidity pool on Uniswap to set the price.</li>
+          <li>Share the contract address with the pack.</li>
+          <li>Swap ETH → FERN. Become a field dog. 🌾</li>
+        </ol>
+        <p style="margin-top: 16px;">
+          Contract address: <code>deploy it and paste it here</code>
+        </p>
+      </section>
+
+      <p class="disclaimer">
+        ⚠️ $FERN is a meme coin made for fun. It has no intrinsic value, no
+        roadmap, and no promises. Meme coins are extremely risky and most go to
+        zero. Never invest more than you can afford to lose. Do your own
+        research. Not financial advice — it's a dog.
+      </p>
+
+      <footer>Made with 🐾 for Fern, the goodest field girl.</footer>
+    </div>
+  </body>
+</html>

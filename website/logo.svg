@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="$FERN coin logo — Fern the field golden retriever">
+  <defs>
+    <radialGradient id="coatGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#e88a44"/>
+      <stop offset="60%" stop-color="#cc6328"/>
+      <stop offset="100%" stop-color="#a8481b"/>
+    </radialGradient>
+    <linearGradient id="earGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8481b"/>
+      <stop offset="100%" stop-color="#7c330f"/>
+    </linearGradient>
+    <radialGradient id="muzzleGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#f7d49a"/>
+      <stop offset="100%" stop-color="#eaad66"/>
+    </radialGradient>
+    <linearGradient id="coinRim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f6db8d"/>
+      <stop offset="50%" stop-color="#d9a441"/>
+      <stop offset="100%" stop-color="#b07d1c"/>
+    </linearGradient>
+    <radialGradient id="coinFace" cx="50%" cy="42%" r="62%">
+      <stop offset="0%" stop-color="#fffdf6"/>
+      <stop offset="100%" stop-color="#f4e6c2"/>
+    </radialGradient>
+    <!-- A single wheat grain (base at 0,0, tip pointing up) -->
+    <g id="kernel">
+      <path d="M0 0 C 7 -4 9 -13 0 -23 C -9 -13 -7 -4 0 0 Z" fill="#e2b54a"/>
+    </g>
+    <!-- A wheat stalk: stem + grain head -->
+    <g id="wheatStalk">
+      <path d="M0 4 C -3 -26 -3 -52 0 -80" stroke="#bf8a2c" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <use href="#kernel" transform="translate(0 -82)"/>
+      <use href="#kernel" transform="translate(-2 -64) rotate(-36)"/>
+      <use href="#kernel" transform="translate(2 -64) rotate(36)"/>
+      <use href="#kernel" transform="translate(-2 -48) rotate(-40)"/>
+      <use href="#kernel" transform="translate(2 -48) rotate(40)"/>
+      <use href="#kernel" transform="translate(-2 -32) rotate(-44)"/>
+      <use href="#kernel" transform="translate(2 -32) rotate(44)"/>
+    </g>
+  </defs>
+
+  <!-- Coin body -->
+  <circle cx="256" cy="256" r="248" fill="url(#coinRim)"/>
+  <circle cx="256" cy="256" r="230" fill="#b8841f"/>
+  <circle cx="256" cy="256" r="220" fill="url(#coinFace)"/>
+
+  <!-- Top arc text -->
+  <path id="arcTop" d="M 96 256 A 160 160 0 0 1 416 256" fill="none"/>
+  <text font-family="'Trebuchet MS', Verdana, sans-serif" font-size="40" font-weight="bold" fill="#6b8e23" letter-spacing="6">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">$FERN</textPath>
+  </text>
+
+  <!-- Wheat (field motif), two stalks crossed at the bottom -->
+  <use href="#wheatStalk" transform="translate(256 476) rotate(-26)"/>
+  <use href="#wheatStalk" transform="translate(256 476) rotate(26)"/>
+
+  <!-- ===== Fern ===== -->
+  <g>
+    <!-- Ears (behind head) -->
+    <path d="M 150 150 C 96 158 78 264 120 348 C 150 404 210 392 206 312 C 202 244 206 178 168 150 Z" fill="url(#earGrad)"/>
+    <path d="M 362 150 C 416 158 434 264 392 348 C 362 404 302 392 306 312 C 310 244 306 178 344 150 Z" fill="url(#earGrad)"/>
+
+    <!-- Head -->
+    <ellipse cx="256" cy="252" rx="120" ry="124" fill="url(#coatGrad)"/>
+    <!-- Forehead blaze highlight -->
+    <path d="M 256 150 C 240 200 240 250 256 300 C 272 250 272 200 256 150 Z" fill="#ed9852" opacity="0.45"/>
+
+    <!-- Muzzle -->
+    <ellipse cx="256" cy="318" rx="74" ry="60" fill="url(#muzzleGrad)"/>
+
+    <!-- Eyes -->
+    <ellipse cx="208" cy="244" rx="18" ry="21" fill="#2b2018"/>
+    <ellipse cx="304" cy="244" rx="18" ry="21" fill="#2b2018"/>
+    <circle cx="214" cy="237" r="6" fill="#fff" opacity="0.9"/>
+    <circle cx="310" cy="237" r="6" fill="#fff" opacity="0.9"/>
+    <!-- Brow tufts -->
+    <ellipse cx="206" cy="214" rx="14" ry="6" fill="#f0a35a" opacity="0.6"/>
+    <ellipse cx="306" cy="214" rx="14" ry="6" fill="#f0a35a" opacity="0.6"/>
+
+    <!-- Nose -->
+    <path d="M 256 292 C 284 292 296 308 282 322 C 273 331 239 331 230 322 C 216 308 228 292 256 292 Z" fill="#2b2018"/>
+    <ellipse cx="248" cy="302" rx="5" ry="3" fill="#5a4636" opacity="0.7"/>
+
+    <!-- Happy mouth + tongue -->
+    <path d="M 256 326 L 256 348" stroke="#3a2c1f" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M 256 348 C 232 372 206 364 198 344" stroke="#3a2c1f" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M 256 348 C 280 372 306 364 314 344" stroke="#3a2c1f" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M 256 350 C 246 350 240 366 248 378 C 254 386 258 386 264 378 C 272 366 266 350 256 350 Z" fill="#e8718a"/>
+    <path d="M 256 352 L 256 372" stroke="#cf5a72" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

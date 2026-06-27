@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Fern">
+  <defs>
+    <radialGradient id="fCoat" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#e88a44"/>
+      <stop offset="60%" stop-color="#cc6328"/>
+      <stop offset="100%" stop-color="#a8481b"/>
+    </radialGradient>
+    <linearGradient id="fEar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8481b"/>
+      <stop offset="100%" stop-color="#7c330f"/>
+    </linearGradient>
+    <radialGradient id="fMuz" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#f7d49a"/>
+      <stop offset="100%" stop-color="#eaad66"/>
+    </radialGradient>
+    <linearGradient id="fRim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f6db8d"/>
+      <stop offset="100%" stop-color="#c8901f"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="252" fill="url(#fRim)"/>
+  <circle cx="256" cy="256" r="234" fill="#f4e6c2"/>
+  <!-- Face, scaled up to fill the coin -->
+  <g transform="translate(256 268) scale(1.5) translate(-256 -252)">
+    <path d="M 150 150 C 96 158 78 264 120 348 C 150 404 210 392 206 312 C 202 244 206 178 168 150 Z" fill="url(#fEar)"/>
+    <path d="M 362 150 C 416 158 434 264 392 348 C 362 404 302 392 306 312 C 310 244 306 178 344 150 Z" fill="url(#fEar)"/>
+    <ellipse cx="256" cy="252" rx="120" ry="124" fill="url(#fCoat)"/>
+    <path d="M 256 150 C 240 200 240 250 256 300 C 272 250 272 200 256 150 Z" fill="#ed9852" opacity="0.45"/>
+    <ellipse cx="256" cy="318" rx="74" ry="60" fill="url(#fMuz)"/>
+    <ellipse cx="208" cy="244" rx="19" ry="22" fill="#2b2018"/>
+    <ellipse cx="304" cy="244" rx="19" ry="22" fill="#2b2018"/>
+    <circle cx="214" cy="237" r="6.5" fill="#fff"/>
+    <circle cx="310" cy="237" r="6.5" fill="#fff"/>
+    <path d="M 256 292 C 284 292 296 308 282 322 C 273 331 239 331 230 322 C 216 308 228 292 256 292 Z" fill="#2b2018"/>
+    <path d="M 256 326 L 256 348" stroke="#3a2c1f" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M 256 348 C 232 372 206 364 198 344" stroke="#3a2c1f" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M 256 348 C 280 372 306 364 314 344" stroke="#3a2c1f" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M 256 350 C 246 350 240 366 248 378 C 254 386 258 386 264 378 C 272 366 266 350 256 350 Z" fill="#e8718a"/>
+  </g>
+</svg>
